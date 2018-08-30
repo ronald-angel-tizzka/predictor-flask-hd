@@ -20,7 +20,7 @@ Follow this instructions to install the environment.
 
 * Download the project in you local machine.
 ```
-git clone 
+git clone git clone https://ronald-velocity@bitbucket.org/ronald-velocity/predictor-flask-hd.git
 ```
 
 **TODO:** This could be within the DockerFile.
