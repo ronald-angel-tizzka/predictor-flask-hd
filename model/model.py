@@ -1,12 +1,13 @@
 import keras
-from keras.datasets import mnist
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten
-from keras.layers import Conv2D, MaxPooling2D
-from keras import backend as K
-from config.config import BATCH_SIZE, NUM_CLASSES, EPOCHS, IMG_ROWS, IMG_COLS, MODEL_STORAGE_PATH
-from PIL import Image
 import numpy as np
+from PIL import Image
+from keras import backend as K
+from keras.datasets import mnist
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Dense, Dropout, Flatten
+from keras.models import Sequential
+
+from config.config import BATCH_SIZE, NUM_CLASSES, EPOCHS, IMG_ROWS, IMG_COLS, MODEL_STORAGE_PATH
 
 
 class ImageClassifier:

@@ -1,9 +1,10 @@
-from flask import Flask, request, Response, jsonify
+from flask import Flask, request, jsonify
+
+from config.config import MODEL_STORAGE_PATH
 from model.model import ImageClassifier
+from service.exceptions.generic_error import GenericError
 from service.image_predictor import ImagePredictor
 from service.image_trainer import ImageTrainer
-from service.exceptions.generic_error import GenericError
-from config.config import MODEL_STORAGE_PATH
 
 # TODO: Use factory in case of config reading or injections needed.
 app = Flask(__name__)

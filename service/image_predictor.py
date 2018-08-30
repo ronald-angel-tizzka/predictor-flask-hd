@@ -1,8 +1,10 @@
-from model.model import ImageClassifier
 import logging
 import sys
+
 import numpy as np
 from keras.models import load_model
+
+from model.model import ImageClassifier
 
 
 class ImagePredictor(object):

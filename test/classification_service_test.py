@@ -1,7 +1,9 @@
 import unittest
+
+import numpy as np
+
 from service.image_predictor import ImagePredictor
 from service.image_trainer import ImageTrainer
-import numpy as np
 
 
 class ClassificationServiceTest(unittest.TestCase):

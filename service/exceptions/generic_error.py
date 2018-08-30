@@ -1,6 +1,3 @@
-from flask import jsonify
-
-
 class GenericError(Exception):
     """
     Manages the error information to be rendered in service.
