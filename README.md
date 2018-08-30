@@ -78,11 +78,11 @@ The microservice is composed by 2 endpoints:
 
 * The flask service starts an asynchronous task using celery and a Queue.
 * The task launch a spark job which runs the training model in parallel.
-
     - The spark job should use a back pressure strategy to limit the input rate from the source. Gain control, trade-off throughput vs latency.
     - This back pressure could be done writing serialized images first to kafka.
     - The spark job could also use micro-batching strategies with intermediary checkpoints in HDFS if the data size is huge.
     - The job should take care of a good data partitioning. Smaller partition less memory used, but more shuffling (latency).
+    
 * The spark job store model in HDFS in format proto buff.
 * HDFS is also used to store intermediary checkpoints.    
 * The spark task responds with the job finished (heartbeat could be used) status to the task.    
