@@ -15,7 +15,6 @@ class ImageTrainer(object):
             # TODO: Make decision taking validation into account validation
             metrics_result = self.model.train()
             logging.info("model performance is {}".format(metrics_result))
-            print(metrics_result)
             return metrics_result is not None
         # TODO: Apply specific exceptions and log,
         except:
