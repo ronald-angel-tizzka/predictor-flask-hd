@@ -32,8 +32,11 @@ class ClassificationServiceTest(unittest.TestCase):
         :return: assert with expected value.
         """
         expected_predicted_digit = "5"
-        digits_predictor = ImagePredictor("data/dummy_model.h5")
-        predicted_array = digits_predictor.classify_digit("data/n5.png")
+        test_model_path = "data/dummy_model.h5"
+        test_img_path = "data/n5.png"
+        
+        digits_predictor = ImagePredictor(test_model_path)
+        predicted_array = digits_predictor.classify_digit(test_img_path)
         predicted_digit = np.array_str(np.argmax(predicted_array, axis=1))
         self.assertEqual(predicted_digit, expected_predicted_digit)
 
