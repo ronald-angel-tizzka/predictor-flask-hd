@@ -58,7 +58,7 @@ class ImageClassifier:
 
     def train(self):
         """
-        Train the model using loaded data and save to external checkpoint (zk in future).
+        Train the model using loaded data and save to external store (HDFS).
         :return: Training result evaluated against a threshold.
         """
         # convert types
@@ -91,7 +91,6 @@ class ImageClassifier:
         :param model: Injected reference for the model.
         :return: Array with closest classes predicted.
         """
-        # TODO: Convert mutability to mapping pipe functional like
         img_loaded = Image.open(path_image).convert("L")
         img_loaded = img_loaded.resize((28, 28))
         img_arr = np.array(img_loaded)

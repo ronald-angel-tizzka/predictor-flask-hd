@@ -8,7 +8,7 @@ from service.image_trainer import ImageTrainer
 
 class ClassificationServiceTest(unittest.TestCase):
     """
-    Test for the main service methods.
+    Test for the main classification/training service methods.
     """
 
     # TODO: Complete the test with border cases for services.
@@ -27,10 +27,15 @@ class ClassificationServiceTest(unittest.TestCase):
         self.assertRaises(ValueError, image_trainer.train_digits())
 
     def test_single_prediction_result(self):
-        predictor = ImagePredictor("data/dummy_model.h5")
-        predicted_array = predictor.classify_digit("data/n5.png")
+        """
+        Test a single result for a specif digit test file.
+        :return: assert with expected value.
+        """
+        expected_predicted_digit = "5"
+        digits_predictor = ImagePredictor("data/dummy_model.h5")
+        predicted_array = digits_predictor.classify_digit("data/n5.png")
         predicted_digit = np.array_str(np.argmax(predicted_array, axis=1))
-        self.assertEqual(predicted_digit, '5')
+        self.assertEqual(predicted_digit, expected_predicted_digit)
 
 
 if __name__ == '__main__':
