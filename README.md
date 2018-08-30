@@ -54,7 +54,7 @@ sample Output: "True".
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"image_path": "test/data/n5.p"}' http://localhost:5000/process_digit
 ```
-sample Output: "[6]".
+sample Output: "[5]".
 
 
 ## Running the tests
