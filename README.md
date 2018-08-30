@@ -97,7 +97,6 @@ The microservice is composed by 2 endpoints:
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* The complete microservice could work with WSGI, NGINX , Docker compose, Kubernetes.
+
 
