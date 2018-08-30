@@ -70,6 +70,15 @@ to run add:
 
 ## Architecture
 
+The microservice is composed by 2 endpoints:
+
+## Training
+
+![alt text](training_arch.png)
+
+## Prediction
+
+![alt text](prediction_arch.png)
 
 ## Acknowledgments
 
