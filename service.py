@@ -26,8 +26,8 @@ def invalid_request(error):
     response.status_code = error.status_code
     return response
 
-
-@app.route('/train_digits', methods=['GET', 'POST'])
+# TODO: Use API routes and versions with reverse server.
+@app.route('/digits/train', methods=['GET', 'POST'])
 def train_digits():
     """
     Service that calls the digits training method using the images path.
@@ -53,7 +53,7 @@ def train_digits():
                                status_code=400)
 
 
-@app.route('/process_digit', methods=['GET', 'POST'])
+@app.route('/digits/classify', methods=['GET', 'POST'])
 def process_digit():
     """
     Service that calls the digits prediction method for a single image.

@@ -44,7 +44,7 @@ We can call the service endpoints on this way (using sample data):
 * Training:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"images_batch_path": "mnist.npz"}' http://localhost:5000/train_digits
+curl -X POST -H "Content-Type: application/json" -d '{"images_batch_path": "mnist.npz"}' http://localhost:5000/digits/train
 ```
 
 sample Output: "True".
@@ -52,7 +52,7 @@ sample Output: "True".
 * Prediction:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"image_path": "test/data/n5.p"}' http://localhost:5000/process_digit
+curl -X POST -H "Content-Type: application/json" -d '{"image_path": "test/data/n5.p"}' http://localhost:5000/digits/classify
 ```
 sample Output: "[5]".
 
