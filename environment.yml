@@ -1,4 +1,4 @@
-name: challenge
+name: hm-predictor
 channels:
   - defaults
   - conda-forge
