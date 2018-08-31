@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to have docker installed in yur local machine. Example for ubuntu:
+You will need to have docker installed in your local machine. Example for ubuntu:
 
 ```
 sudo apt install docker-ce
@@ -20,7 +20,7 @@ Follow this instructions to install the environment.
 
 * Download the project in you local machine.
 ```
-git clone git clone https://ronald-velocity@bitbucket.org/ronald-velocity/predictor-flask-hd.git
+git clone https://ronald-velocity@bitbucket.org/ronald-velocity/predictor-flask-hd.git
 ```
 
 **TODO:** This could be within the DockerFile.

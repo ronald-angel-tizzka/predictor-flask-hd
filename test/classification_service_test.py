@@ -34,11 +34,11 @@ class ClassificationServiceTest(unittest.TestCase):
         expected_predicted_digit = "5"
         test_model_path = "data/dummy_model.h5"
         test_img_path = "data/n5.png"
-        
+
         digits_predictor = ImagePredictor(test_model_path)
         predicted_array = digits_predictor.classify_digit(test_img_path)
         predicted_digit = np.array_str(np.argmax(predicted_array, axis=1))
-        self.assertEqual(predicted_digit, expected_predicted_digit)
+        self.assertTrue(expected_predicted_digit in predicted_digit)
 
 
 if __name__ == '__main__':
