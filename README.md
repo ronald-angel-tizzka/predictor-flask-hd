@@ -57,7 +57,7 @@ sample Output: "True".
 * Prediction:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"image_path": "test/data/n5.p"}' http://localhost:5000/digits/classify
+curl -X POST -H "Content-Type: application/json" -d '{"image_path": "test/data/n5.png"}' http://localhost:5000/digits/classify
 ```
 sample Output: "[5]".
 
