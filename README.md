@@ -28,8 +28,7 @@ Follow this instructions to install the environment.
 git clone https://ronald-velocity@bitbucket.org/ronald-velocity/predictor-flask-hd.git
 ```
 
-**TODO:** This could be within the DockerFile.
-**TODO:** In the future use Docker Compose to deploy multiple containers.
+**TODO:** This could be within the DockerFile. Use Docker Compose to deploy multiple containers in further versions.
 
 * Build your docker container using the Dockerfile.
 
