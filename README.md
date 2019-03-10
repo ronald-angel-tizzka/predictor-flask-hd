@@ -1,6 +1,6 @@
 # Hand Written Digits Predictor Service
 
-This project creates a service to classify hand written digits. The projects uses:
+This project creates a service to classify hand written digits. The project uses:
 
 * Docker.
 * Conda.
